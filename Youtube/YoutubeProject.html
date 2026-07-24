@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Youtube</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./General.css">
+        <link rel="stylesheet" href="./Header.css">
+        <link rel="stylesheet" href="./Sidebar.css">
+        <link rel="stylesheet" href="./videogrid.css">
+    </head>
+    <body>
+        <!--We can use header tag for header element instead of div-->
+        <header class="header">
+            <div class="left-sec">
+                <img class="hamburger" src="hamburger-menu.svg" alt="">
+                <img class="youtube-logo" src="youtube-logo.svg" alt="">
+            </div>
+            <div class="middle-sec">
+                <input class="search-box" type="text" placeholder="Search">
+                <button class="magnify-button">
+                    <img class="magnify-image" src="magnifyingglass.svg" alt="">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-button">
+                    <img class="voice-image" src="voice-icon.svg" alt="">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-sec">
+                <div class="camera">
+                    <img src="camera-icon.svg" alt="">
+                    <div class="tooltip">Create</div>
+                </div>
+                
+                <div class="rectangle">
+                    <img src="./rectangle.svg" alt="">
+                    <div class="tooltip">YouTube apps</div>
+                </div>
+                
+                <div class="notificationdiv">
+                    <div class="notification">
+                        <img src="./notifications.svg" alt="">
+                        <div class="notification-count">3</div>
+                    </div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                
+                <img class="user-profile" src="user.jpeg" alt="">
+            </div>
+        </header>
+        <!--We can use nav tag for sidebar as it work for navigating through the website. alternative div-->
+        <nav class="sidebar">
+         <div class="sidebardiv">
+                <div>
+                    <img src="home.svg" alt="">
+                </div>
+                <div>
+                    Home
+                </div>
+            </div>
+            <div class="sidebardiv">
+                <div>
+                    <img src="explore.svg" alt="">
+                </div>
+                <div>
+                    Explore
+                </div>
+            </div>
+            <div class="sidebardiv">
+                <div>
+                    <img src="subscriptions.svg" alt="">
+                </div>
+                <div>
+                    Subscriptions
+                </div>
+            </div>
+            <div class="sidebardiv">
+                <div>
+                    <img src="originals.svg" alt="">
+                </div>
+                <div>
+                    Originals
+                </div>
+            </div>
+            <div class="sidebardiv">
+                <div>
+                    <img src="youtube-music.svg" alt="">
+                </div>
+                <div>
+                    YouTube Music
+                </div>
+            </div>
+            <div class="sidebardiv">
+                <div>
+                    <img src="Library.svg" alt="">
+                </div>
+                <div>
+                    Library
+                </div>
+            </div>
+        </nav>
+        <!--main tag is used because it is main part of the website-->
+        <main>
+            <!--There might be something under videos that's why it is a section-->
+            <section class="display-grid">
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-1.webp" alt="Sundar">
+                        <div class="video-time">14:20</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic1.jpeg" alt="Marq">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                            </div>
+                            <div>
+                                <p class="author">Marques Brownlee</p>
+                                <p class="video-view">3.4M views &#183; 6 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-2.webp" alt="Mark">
+                        <div class="video-time">8:22</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic2.jpeg" alt="Crypto">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Try Not To Laugh Challenge #9</p>
+                            </div>
+                            <div>
+                                <p class="author">Markplier</p>
+                                <p class="video-view">19M views &#183; 4 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-3.webp" alt="WoW">
+                        <div class="video-time">9:13</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic3.jpeg" alt="Girl">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Crazy Tik Toks Taken Moments Before DISASTER</p>
+                            </div>
+                            <div>
+                                <p class="author">SSSniperWolf</p>
+                                <p class="video-view">12M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-4.webp" alt="Verit">
+                        <div class="video-time">22:09</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic4.jpeg" alt="Ve">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">The simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                            </div>
+                            <div>
+                                <p class="author">Veritasium</p>
+                                <p class="video-view">18M views &#183; 4 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-5.webp" alt="Kadane">
+                        <div class="video-time">11:17</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic5.jpeg" alt="Angry Bird">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                            </div>
+                            <div>
+                                <p class="author">CS Dojo</p>
+                                <p class="video-view">519k views &#183; 5 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-6.webp" alt="Beast">
+                        <div class="video-time">19:59</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic6.jpeg" alt="BeastLogo">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Anything You Can Fit In The Circle I'll Pay For</p>
+                            </div>
+                            <div>
+                                <p class="author">MrBeast</p>
+                                <p class="video-view">141M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-7.webp" alt="Why">
+                        <div class="video-time">10:13</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic7.jpeg" alt="Turbine">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Why Planes Don't Fly Over Tibet</p>
+                            </div>
+                            <div>
+                                <p class="author">RealLifeLore</p>
+                                <p class="video-view">6.6M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-8.webp" alt="Plane">
+                        <div class="video-time">7:12</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic8.jpeg" alt="Tech">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Inside The World's Biggest Passenger Plane</p>
+                            </div>
+                            <div>
+                                <p class="author">Tech Vision</p>
+                                <p class="video-view">3.7M views &#183; 10 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-9.webp" alt="Planc">
+                        <div class="video-time">13:17</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic9.jpeg" alt="Then">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">The SECRET to Super Human STRENGTH</p>
+                            </div>
+                            <div>
+                                <p class="author">ThenX</p>
+                                <p class="video-view">20M views &#183; 3 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-10.webp" alt="Food">
+                        <div class="video-time">7:53</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic10.jpeg" alt="Business">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+                            </div>
+                            <div>
+                                <p class="author">Business Insider</p>
+                                <p class="video-view">14M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-11.webp" alt="Ocean">
+                        <div class="video-time">4:10</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic11.jpeg" alt="Dst">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+                            </div>
+                            <div>
+                                <p class="author">Destination Tips</p>
+                                <p class="video-view">3M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnaildiv">
+                        <img class="thumbnail" src="thumbnail-12.webp" alt="Water">
+                        <div class="video-time">4:51</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div>
+                            <img class="profile" src="Profilepic12.jpeg" alt="TED">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="title">What would happen if you didn't drink water? Mia Nacamulli</p>
+                            </div>
+                            <div>
+                                <p class="author">TED-Ed</p>
+                                <p class="video-view">12M views &#183; 5 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
+</html>
