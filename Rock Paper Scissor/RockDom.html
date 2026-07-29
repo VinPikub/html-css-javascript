@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./RockDom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <p class="heading">Rock Paper Scissors</p>
+    
+    <button class="rock" onclick="
+    winOrLoseGame(0);">
+    <img src="./rock-emoji.png" alt="">
+    </button>
+    
+    <button class="paper" onclick="
+    winOrLoseGame(1);">
+    <img src="./paper-emoji.png" alt="">
+    </button>
+    
+    <button class="scissor" onclick="
+    winOrLoseGame(2);">
+    <img src="./scissors-emoji.png" alt="">
+    </button>
+    
+    <p id="declare"></p>
+    
+    <button class="reset" onclick="
+    score.wins = 0;
+    score.loss = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    if (document.querySelector('#resetScore') === null)
+        document.querySelector('#declare').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
+    else
+        document.querySelector('#resetScore').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';">Reset Score</button>
+    
+    <script src="RockDom.js"></script>
+</body>
+</html>

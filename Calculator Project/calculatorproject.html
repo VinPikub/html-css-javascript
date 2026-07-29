@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="./calculatorproject.css">
+</head>
+<body>
+    <p id="para"></p>
+    <div class="first">
+        <button onclick="
+        displayOutput(1)">1</button>
+        <button onclick="
+        displayOutput(2)">2</button>
+        <button onclick="
+        displayOutput(3)">3</button>
+        <button class="plus" onclick="
+        displayOutput('+')">+</button>
+    </div>
+    <div class="second">
+        <button onclick="
+        displayOutput(4)">4</button>
+        <button onclick="
+        displayOutput(5)">5</button>
+        <button onclick="
+        displayOutput(6)">6</button>
+        <button class="minus" onclick="
+        displayOutput('-')">-</button>
+    </div>
+    <div class="third">
+        <button onclick="
+        displayOutput(7)">7</button>
+        <button onclick="
+        displayOutput(8)">8</button>
+        <button onclick="
+        displayOutput(9)">9</button>
+        <button class="multy" onclick="
+        displayOutput('*')">*</button>
+    </div>
+    <div class="fourth">
+        <button onclick="
+        displayOutput(0)">0</button>
+        <button class="dot" onclick="
+        displayOutput('.')">.</button>
+        <button onclick="
+        document.querySelector('#para').innerHTML = `${eval(variable)}`;
+        variable = eval(variable);
+        variable = variable + '';">=</button>
+        <button class="divide" onclick="
+        displayOutput('/')">/</button>
+    </div>
+    <button class="clear" onclick="
+    variable ='';
+    document.querySelector('#para').innerHTML = '';">Clear</button>
+
+    <script src="./calculatorproject.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+        body {
+            font-family: Arial;
+            background-color: black;
+        }
+        button {
+            font-size: 20px;
+            background-color: rgb(48, 47, 47);
+            color: white;
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 100px;
+        }
+        div {
+            margin-top: 10px;
+        }
+        .first button,
+        .second button,
+        .third button,
+        .fourth button{
+            margin-right: 10px;
+        }
+        .dot {
+            background-color: rgb(48, 47, 47);
+            padding-right: 23px;
+            padding-left: 23px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .plus,
+        .minus,
+        .multy,
+        .divide {
+            background-color: rgb(254, 160, 10);
+            color: white;
+        }
+        .minus,
+        .multy,
+        .divide {
+            padding-left: 23px;
+            padding-right: 23px;
+        }
+        .clear {
+            font-size: 15px;
+            margin-top: 15px;
+            background-color: rgb(48, 47, 47);
+            color: white;
+            padding-left: 11px;
+            padding-right: 11px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        #para {
+            color: white;
+            font-size: 45px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
