@@ -1,0 +1,30 @@
+        body {
+            font-family: Arial;
+        }
+        #input {
+            font-size: 15px;
+            padding-left: 7px;
+            height: 30px;
+            width: 180px;
+
+        }
+        #due {
+            margin-left: 3px;
+            font-family: monospace;
+            height: 32px;
+            width: 140px;
+            font-size: 15px;
+        }
+        #add {
+            margin-left: 7px;
+            width: 95px;
+            font-size: 15px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .name-date-add {
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+        }

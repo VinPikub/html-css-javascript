@@ -1,0 +1,10 @@
+        div {
+            margin-top: 300px;
+            margin-left: 100px;
+            width: 180px;
+            font-family: monospace;
+            font-size: 15px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 10px 8px;
+        }
