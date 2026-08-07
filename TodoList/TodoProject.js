@@ -15,7 +15,7 @@
         for(let i =0; i<enteredValue.length; i++)
         {
             let todo = enteredValue[i];
-            let html = `<div class="name-date-add">
+            let html = `<div class="name-date-add" id="output">
                             <div>${todo.name} </div>
                             <div>${todo.due} </div>
                             <button id="delete" onclick="
