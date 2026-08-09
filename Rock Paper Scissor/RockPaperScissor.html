@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./RockDom.css">
+    <link rel="stylesheet" href="./RockPaperScissor.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Rock Paper Scissor Game</title>
 </head>
 <body>
     <p class="heading">Rock Paper Scissors</p>
     
     <button class="rock" onclick="
     winOrLoseGame(0);">
-    <img src="./rock-emoji.png" alt="">
+    <img id="rock-img" src="./rock-emoji.png" alt="">
     </button>
     
     <button class="paper" onclick="
     winOrLoseGame(1);">
-    <img src="./paper-emoji.png" alt="">
+    <img id="paper-img" src="./paper-emoji.png" alt="">
     </button>
     
-    <button class="scissor" onclick="
+    <button class="scissors" onclick="
     winOrLoseGame(2);">
-    <img src="./scissors-emoji.png" alt="">
+    <img id="scissors-img" src="./scissors-emoji.png" alt="">
     </button>
     
     <p id="declare"></p>
@@ -39,6 +39,6 @@
     else
         document.querySelector('#resetScore').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';">Reset Score</button>
     
-    <script src="RockDom.js"></script>
+    <script src="RockPaperScissor.js"></script>
 </body>
 </html>

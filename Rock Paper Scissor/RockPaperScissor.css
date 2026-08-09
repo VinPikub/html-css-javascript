@@ -10,12 +10,16 @@
         button {
             cursor: pointer;
         }
-        img {
+        #rock-img {
             height: 50px;
+        }
+        #paper-img,
+        #scissors-img {
+            height: 48px;
         }
         .rock,
         .paper,
-        .scissor {
+        .scissors {
             background-color: black;
             padding: 30px;
             border-color: white;
