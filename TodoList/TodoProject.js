@@ -1,4 +1,4 @@
-        let enteredValue = [];
+        let enteredValue = JSON.parse(localStorage.getItem("key")) || [];
         
         function takingValue(){
             let name = document.querySelector('#input').value;
@@ -6,12 +6,14 @@
             enteredValue.push({name: name,
                 due: due
             });
+            //localStorage.setItem("item", JSON.stringify(enteredValue));
             document.querySelector('#input').value = '';
-            document.querySelector('#due').value = '';
+            //document.querySelector('#due').value = '';
         }
 
         function todoFunc(){
         let showText = '';
+        //enteredValue = JSON.parse(localStorage.getItem("item"));
         for(let i =0; i<enteredValue.length; i++)
         {
             let todo = enteredValue[i];
@@ -28,4 +30,6 @@
         }
         let value = document.querySelector('#show');
         value.innerHTML = showText;
+        localStorage.setItem("key", JSON.stringify(enteredValue));
     }
+        todoFunc();
