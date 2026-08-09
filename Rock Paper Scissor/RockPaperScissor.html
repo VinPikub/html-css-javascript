@@ -38,7 +38,11 @@
         document.querySelector('#declare').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
     else
         document.querySelector('#resetScore').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';">Reset Score</button>
-    
-    <script src="RockPaperScissor.js"></script>
+    <button class="auto-stop" onclick="
+    setInterval(function autoPlay(){
+        let autoChoice = Math.floor(Math.random() * 3);
+        winOrLoseGame(autoChoice);
+    }, 2000);">Auto Play</button>
+    <script src="./RockPaperScissor.js"></script>
 </body>
 </html>

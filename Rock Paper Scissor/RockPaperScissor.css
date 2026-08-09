@@ -28,7 +28,8 @@
             margin-right: 10px;
             border-radius: 100px;
         }
-        .reset {
+        .reset,
+        .auto-stop {
             font-family: Roboto;
             font-size: 17px;
             background-color: white;
