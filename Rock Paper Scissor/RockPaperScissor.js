@@ -50,3 +50,22 @@
                 return 'scissors';
         }
         value.innerHTML = `Wins: ${score.wins}, Losses: ${score.loss}, Ties: ${score.ties}`;
+        let autoPlayOn = false;
+        let intervalId;
+        function autoPlay(){
+            if(!autoPlayOn)
+            {
+                intervalId= setInterval(function autoPlay(){
+                let autoChoice = Math.floor(Math.random() * 3);
+                winOrLoseGame(autoChoice);
+                }, 1000);
+                autoPlayOn = true;
+                document.querySelector('.auto-stop').innerHTML = "Stop Play";
+            }
+            else
+            {
+                clearInterval(intervalId);
+                autoPlayOn = false;
+                document.querySelector('.auto-stop').innerHTML = "Auto Play";
+            }
+        }
