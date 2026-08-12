@@ -55,7 +55,7 @@
         function autoPlay(){
             if(!autoPlayOn)
             {
-                intervalId= setInterval(function autoPlay(){
+                intervalId= setInterval(() => { //using arrow function
                 let autoChoice = Math.floor(Math.random() * 3);
                 winOrLoseGame(autoChoice);
                 }, 1000);
