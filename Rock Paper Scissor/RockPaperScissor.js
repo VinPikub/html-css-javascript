@@ -40,6 +40,29 @@
             localStorage.setItem('score', JSON.stringify(score));
             value.innerHTML = ` <span class="result">${result}</span> <p>You <img id="${userFlag}-img" src="./${userFlag}-emoji.png" alt=""> <img id="${comFlag}-img" src="./${comFlag}-emoji.png" alt=""> Computer<\p><p id="resetScore">Wins: ${score.wins}, Losses: ${score.loss}, Ties: ${score.ties}<\p>`;
         }
+
+        let rock = document.querySelector(".rock");
+        let paper = document.querySelector(".paper");
+        let scissors = document.querySelector(".scissors")
+        rock.addEventListener("click", () => {
+            winOrLoseGame(0);
+        });
+        paper.addEventListener("click", () => {
+            winOrLoseGame(1);
+        });
+        scissors.addEventListener("click", () => {
+            winOrLoseGame(2);
+        });
+
+        document.body.addEventListener('keydown', (event) => {
+            if(event.key === 'r' || event.key === 'R')
+                winOrLoseGame(0);
+            else if(event.key === 'p' || event.key === 'P')
+                winOrLoseGame(1);
+            else if(event.key === 's' || event.key === 'S')
+                winOrLoseGame(2);
+        });
+        
         function rockPaperScissor(value)
         {
             if (value === 0)
@@ -49,7 +72,9 @@
             else
                 return 'scissors';
         }
+        
         value.innerHTML = `Wins: ${score.wins}, Losses: ${score.loss}, Ties: ${score.ties}`;
+        
         let autoPlayOn = false;
         let intervalId;
         function autoPlay(){
@@ -69,3 +94,22 @@
                 document.querySelector('.auto-stop').innerHTML = "Auto Play";
             }
         }
+        let autoStop = document.querySelector(".auto-stop");
+        autoStop.addEventListener("click", () => {
+            autoPlay();
+        });
+
+        function resetScore(){
+            score.wins = 0;
+            score.loss = 0;
+            score.ties = 0;
+            localStorage.removeItem('score');
+            if (document.querySelector('#resetScore') === null)
+                document.querySelector('#declare').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
+            else
+                document.querySelector('#resetScore').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
+        }
+        let reset = document.querySelector(".reset");
+        reset.addEventListener("click", () => {
+            resetScore();
+        })
