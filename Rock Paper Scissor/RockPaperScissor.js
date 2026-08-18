@@ -3,7 +3,7 @@
                 loss: 0,
                 ties: 0
             };
-        let value = document.querySelector('#declare');
+        let value = document.querySelector('.declare');
         function winOrLoseGame(userChoice)
         {
             let result;
@@ -94,6 +94,12 @@
                 document.querySelector('.auto-stop').innerHTML = "Auto Play";
             }
         }
+
+        document.body.addEventListener("keydown", (event) => {
+            if(event.key === 'a' || event.key === 'A')
+                autoPlay();
+        });
+
         let autoStop = document.querySelector(".auto-stop");
         autoStop.addEventListener("click", () => {
             autoPlay();
@@ -104,12 +110,31 @@
             score.loss = 0;
             score.ties = 0;
             localStorage.removeItem('score');
-            if (document.querySelector('#resetScore') === null)
-                document.querySelector('#declare').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
+            if (document.querySelector('.resetScore') === null)
+                document.querySelector('.declare').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
             else
-                document.querySelector('#resetScore').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
+                document.querySelector('.resetScore').innerHTML = 'Wins: 0, Losses: 0, Ties: 0';
         }
+
+        let selectAlert = document.querySelector(".alert");
+        function callAlert()
+        {
+            selectAlert.innerHTML = `Are you sure you want to reset the score? <button class="yesno yes">Yes</button> <button class="yesno no">No</button>`;
+        }
+
         let reset = document.querySelector(".reset");
         reset.addEventListener("click", () => {
-            resetScore();
-        })
+            callAlert();
+            document.querySelector('.yes').addEventListener("click", () => {
+                resetScore();
+                selectAlert.innerHTML = '';
+            });
+            document.querySelector('.no').addEventListener("click", () => {
+                selectAlert.innerHTML = '';
+            });
+        });
+
+        document.body.addEventListener("keydown", (event) => {
+            if(event.key === 'Backspace')
+                autoPlay();
+        });
